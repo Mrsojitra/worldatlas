@@ -3,10 +3,16 @@ import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Headers = () => {
+
+
   const [show, setShow] = useState(false)
 
   const handleButtonToggle = () => {
     return setShow(!show)
+  }
+
+  const handleLinkClick = () => {
+    return setShow(false)
   }
   return (
     <header>
@@ -20,16 +26,16 @@ const Headers = () => {
           <nav className={show ? "menu-mobile" : "menu-web"}>
             <ul>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" onClick={handleLinkClick}>Home</NavLink>
               </li>
               <li>
-                <NavLink to="About">About</NavLink>
+                <NavLink to="About" onClick={handleLinkClick}>About</NavLink>
               </li>
               <li>
-                <NavLink to="Country">Country</NavLink>
+                <NavLink to="Country" onClick={handleLinkClick}>Country</NavLink>
               </li>
               <li>
-                <NavLink to="Contact">Contact</NavLink>
+                <NavLink to="Contact" onClick={handleLinkClick}>Contact</NavLink>
               </li>
             </ul>
           </nav>
