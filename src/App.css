@@ -115,7 +115,6 @@ header {
   align-items: center;
   height: 10rem;
   padding: 0 3.2rem;
-  
 }
 
 nav ul {
@@ -136,11 +135,10 @@ nav ul {
 
 /* media queries  */
 @media screen and (max-width: 998px) {
-  .section-searchFilter{
+  .section-searchFilter {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
   .menu-web {
     display: none;
@@ -613,4 +611,8 @@ contact us Page ends here
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-header {
+  margin: 0;
 }
