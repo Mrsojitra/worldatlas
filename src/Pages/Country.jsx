@@ -14,9 +14,6 @@ const Country = () => {
   useEffect(() => {
     startTransition(async () => {
       const res = await getCountryData();
-      //showing data in console 
-      console.log(res);
-      // showing data in card form
       setCountries(res.data);
     });
   }, []);
