@@ -151,6 +151,7 @@ nav ul {
   .ham-menu {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
   }
 
   .menu-mobile {
@@ -161,6 +162,10 @@ nav ul {
     width: 100%;
     box-shadow: rgba(255, 252, 252, 0.25) 0px 14px 28px;
     z-index: 1;
+  }
+  
+  .navbar-grid {
+    padding: 0;
   }
 
   .menu-mobile ul {
