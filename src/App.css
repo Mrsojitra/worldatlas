@@ -47,6 +47,10 @@ a {
   }
 }
 
+.Logo a {
+  text-decoration: none;
+}
+
 button {
   display: flex;
   gap: 1.2rem;
